@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+            /* Центрируем содержимое внутри секции */
+            text-align: center;
+        }
+
+        /* Стиль заголовка */
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Контейнер для товаров */
+        .products-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(50% - 20px); /* Для двух товаров в строке с учётом gap */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Уменьшенные размеры изображений */
+        .product-image {
+            max-width: 150px; /* Уменьшено с 200px до 150px */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .external-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .external-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+            }
+
+            /* Дополнительно уменьшаем изображения на мобильных устройствах */
+            .product-image {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li><a href="sales.html">Акции и скидки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Каталог товаров</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img class="product-image" src="lab3/Часы.jpg" alt="Мужские часы Casio">
+                    <p>Мужские часы Casio электронные</p>
+                </div>
+                <div class="product">
+                    <img class="product-image" src="lab3/Калькулятор.jpg" alt="Калькулятор Casio FX-991EX">
+                    <p>Калькулятор Casio FX-991EX</p>
+                </div>
+                <!-- Если нужно добавить больше товаров, просто копируйте блок .product -->
+            </div>
+            <div class="external-links">
+                <a href="https://www.casio.com/" target="_blank">Официальный сайт Casio</a>
+                <a href="https://www.amazon.com/" target="_blank">Amazon</a>
+            </div>
+            <table>
+                <tr>
+                    <th>Название товара</th>
+                    <th>Цена</th>
+                    <th>Наличие</th>
+                </tr>
+                <tr>
+                    <td>Мужские часы Casio</td>
+                    <td>$50</td>
+                    <td>В наличии</td>
+                </tr>
+                <tr>
+                    <td>Калькулятор Casio FX-991EX</td>
+                    <td>$20</td>
+                    <td>В наличии</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Интернет-магазин. Ильясов Рустэм Рафаэлевич.</p>
+    </footer>
+</body>
+</html>
